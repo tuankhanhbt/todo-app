@@ -1,0 +1,22 @@
+{
+  "name": "todo-app-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lambda handlers cho Todo App",
+  "scripts": {
+    "dev": "tsx watch src/local-server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1084.0",
+    "@aws-sdk/lib-dynamodb": "^3.1084.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.147",
+    "@types/node": "^20.17.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

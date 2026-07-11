@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* Bảng màu Mộc — warm, đổi theo data-theme trên <html> */
+:root[data-theme="dark"] {
+  --bg: #191512;
+  --surface: #211c18;
+  --surface2: #2a2420;
+  --line: rgba(236, 231, 225, 0.09);
+  --text: #ece7e1;
+  --text2: #a89f95;
+  --text3: #6f675f;
+  --accent: #c4633e;
+  --accent-soft: rgba(196, 99, 62, 0.16);
+}
+:root[data-theme="light"] {
+  --bg: #f2ede6;
+  --surface: #faf7f2;
+  --surface2: #eae4da;
+  --line: rgba(43, 38, 34, 0.1);
+  --text: #2b2622;
+  --text2: #7a7168;
+  --text3: #a2988c;
+  --accent: #c4633e;
+  --accent-soft: rgba(196, 99, 62, 0.16);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+.serif {
+  font-family: "Newsreader", serif;
+}
+input::placeholder {
+  color: var(--text3);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-fadeUp {
+  animation: fadeUp 0.5s ease both;
+}
+.animate-popIn {
+  animation: popIn 0.25s ease both;
+}
