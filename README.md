@@ -29,5 +29,4 @@ todo-app/
 Mỗi thư mục `backend/`, `infra/`, `frontend/` là một package Node độc lập (có `package.json` riêng).
 
 ## Trạng thái
-
-🚧 Đang build lại từ đầu — xem tiến độ ở phần dưới khi cập nhật.
+Live demo: https://dlfk3vksr4jpo.cloudfront.net
